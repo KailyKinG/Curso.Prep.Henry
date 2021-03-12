@@ -1,0 +1,73 @@
+
+Definiciones JavaScript I
+
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Variables
+Strings
+Funciones (argumentos, return)
+Declaraciones if
+Valores booleanos (true, false)
+
+* Variables
+    R: La Variables Es Como Una Caja, A la que le puedes Colocar Un Nombre, El Que tu Quiereas. Esta es Mi caja Pato Lucas.
+        en Esta caja Podemos Guardas cosas, Ejemplo : Numeros, cadenas de Texto Entre Comillas "", valores boleanos (verdadero, falso), nombres de otras variables, etc 
+        para hacerlas trabajar las debemos de escribir de esta manera:  primero colocamos la palabra magica (var), var es la manera corta de escribir "variable" asi mira
+        
+        var NombreDeLaVarible = lo que queramos guardar; 
+        
+        Se escribe var, se coloca un espacio, le colocamos un nombre, otro espacio, para guardar algo en esta caja, debemos primero colocar el simblo de "=", despues otro espacio, ahora escribimmos lo que vamos 
+        a guardar y finalmente terminamos con un punto y como ";"
+
+        Ojo Punto Importante: aunque podemos colocarle el nombre que queramos a nuestra variable, devemmos que tener cuidado, porque existen palabras recervadas que no podemos ocupar.-
+
+* Strings
+    R: Son Cadenas de Texto, que se escriben asi "" Entre Comillas. Ejemplo "KailyKinG DoshK" 
+                                                                                    ^
+                                                                                    |
+                                                                                Esto De Aca Arriba Es Un String o cadena De Texto.-
+
+* Funciones 
+R: haber las Funciones es un programa, este tiene en su interior intrucciones y declaraciones, o cosas que necesitamos que haga por nosotros. y Para hacer Que se Ejecute esta Funcion Debemos de llamArla por su nombre
+
+EJEMPLO: 
+
+function Nombre_Funcion(nombre, edad){
+ aqui colocamos las intrucciones o cosas que queremos que haga
+}
+Nombre_Funcion();
+
+Se escribe de esas manera de arriba.
+
+ # Argumentos
+    R: Los Argumentos Son variables que colocamos al principio, En El Interior de las parentesis y despues cuando al final queeremos que la funcion se Ejecute
+        la llamamos por su nombre seguido de los parentsis colocandole un valor a aquelas variables y terminando con un punto y como ";"
+
+        Nombre_Function("KailyKinG", 36);
+
+# return
+    R: aqui hay que poner mucha atencion, ya te mostre como se escribe una funcion, en la parte donde estan las llaves "{}" lo que esta en su interior Esta Prohibido, Oculto Y Olvidado
+        no hay manera alguna de consultar los datos que colocamos en el interior de aquellas llaves "{}". Te dije antes que las intrucciones y declaraciones, lo que queremos que haga la funcion se encuentra entre aqueelas llaves "{}"
+        Si Por ejemplo creamos una variable en aquel lugar y guardas un dato, el que quieras. Afuera de esta function no podras consultar los datos que guardaste en las llaves "{}".
+        pero podemos obtener los resultados de las instruciones y declaraciones, traer los resultados no los valores de aquellas variables. Si por ejemplo Colocamos las intrucciones para sumar, entonces nos devolvera el resultado de esa suma
+        con esta super palabra "return" o Retorno.
+
+*if
+    R:las declaraciones "if" juega de una manera diferente, ¿como es eso? eeeee compara cosas y segun lo que decida nos ,muestra un resultado u otro 
+    podemos comparar cualquier cosas. y si nuestra comparacion es verdadera nos devolvera un resultado y si no, si es falsa nos dara otro resultado
+
+    Mira:  la escribo asi:
+                                if (10 < 1) {
+                                   1er: lo que nos devolvera, si es verdadera
+                                }2do:  lo que nos devolvera si no lo es 
+
+            Aqui Se Lee:   "if es Si"   Si 10 Es Menor a 1  dame un resultado, ejecuta este codigo. Si la operacion fuese verdadera se ejecuta la primera declaracion, si es falsa como en este caso, se ejecutara la segunda declaracion
+
+*Valores Boleanos (true y false) 
+    R: es simplemente decir verdadero o falso
+    true = verdadero
+    false = falso
+
+    nos sirve bastante, por ejemplo en las declaraciones if y sus comparaciones
+
+
