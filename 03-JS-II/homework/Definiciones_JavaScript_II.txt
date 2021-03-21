@@ -7,3 +7,30 @@ for
 &&, ||, !
 
 R:
+
+for : Es Una Burbuja, que en su interior se repite una determinada tarea
+     una cantidad x de veces. tiene un valor de inicio y "valor final" donde se hacen las conprobaciones.
+     y otra donde nos dice de cuanto en cuanto, ejemplo las vueltas se haran de una, dos, tres vueltas hasta llegar al "valor final".
+
+&& : se le conoce como operador logico.
+    nos sirve para comparar, en este caso: dos tareas
+
+    pregunta asi; si una tarea es verdad &&(Y) si la otra tarea tambien e cierta,
+    entonces que nos de El cofre de Reconpensas; Si no que nos mande A limpiar el baño.
+    Este Operador Necesita Que las Dos tareas Sean Correctas, para entregar el Premio.
+
+|| : Tambien es un Operador logico.
+     y Al igual que el anterior nos sirve para comparar
+
+     Funciona un tanto diferente:
+     pregunta asi; si una tarea es cierta ||(o) esta tarea es cierta,
+     que nos entregue "Las Barras De Oro", 
+     este solo necesita que una tarea sea correcta para entregar el premio.
+
+!  : Otro Operador logico
+    Este Si Que Es Diferente, Pregunta Cosas Al Revez.
+    el pregunta lo opuesto.
+
+    Pregunta asi; Si 1  !==  <=(no es Igual a) 1, Entregara La Comida. Y Si Son iguales 
+                    nos quedamos sin cena.
+                    en este caso Nos quedaremos sin cena Porque 1 Enrealidad Si Es Igaul a Uno
