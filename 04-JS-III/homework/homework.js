@@ -3,34 +3,51 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
+  return array[0];
 }
+devolverPrimerElemento(["Enfoque", "Fuerza", "Conviccion"]);
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array[array.length -1];
 }
+devolverUltimoElemento(["Enfoque", "Fuerza", "Conviccion"]);
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length;
 }
+obtenerLargoDelArray(["Enfoque", "Fuerza", "Conviccion"]);
 
 
-function incrementarPorUno(array) {
+function incrementarPorUno(hoja) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var NuevoCuaderno = [];
+  for(var pag = 0; pag < hoja.length; pag++){
+    NuevoCuaderno[pag] = hoja[pag]+1;
+
+  }
+  return NuevoCuaderno;
 }
+incrementarPorUno([1, 2, 3, 4, 5]);
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  return array;
+
 }
+agregarItemAlComienzoDelArray(["Pan", "Leche", "Huevos", "Fruta"], "Almendras");
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -38,7 +55,10 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
+agregarItemAlComienzoDelArray(["Pan", "Leche", "Huevos", "Fruta"], "Almendras");
 
 
 function dePalabrasAFrase(palabras) {
@@ -47,7 +67,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  return palabras.join(' ');
 }
+dePalabrasAFrase(["Pan", "Leche", "Huevos", "Fruta", "Almendras"]);
 
 
 function arrayContiene(array, elemento) {
