@@ -76,21 +76,37 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  for(var i = 0; i < array.length; i++){
+      if(array[i] == elemento){
+          return true;
+      }
+
+  }
+    return false;
 }
+arrayContiene(["dormitorio", "cosina", "baño"], "jardin");
 
 
 function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var Todos = 0;
+  for(var i = 0; i < numeros.length; i++){
+    Todos += numeros[i];
+ }return Todos;
+
 }
+agregarNumeros([10,20,30,40,50,60,70,80,90,100]);
 
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
+promedioResultadosTest([10,20,30,40,50,60,70,80,90,100]);
 
 
 function numeroMasGrande(numeros) {
