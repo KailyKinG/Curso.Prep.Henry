@@ -188,23 +188,53 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
-} 
+  var Parecidos=arreglo[0];
+  for(var i=0; i<arreglo.length; i++){
+    if(arreglo[i]!==Parecidos){
+        return  false;
+}
 
+}
+return true; 
+} 
+todosIguales([1,1,2]);
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-}
+  var meses=[];
+  for(var i=0; i<array.length; i++){
+    if(array[i]==="Enero"||array[i]==="Marzo"||array[i]==="Noviembre"){
+      meses.push(array[i]);
+    }
 
+  }
+    if(meses.length<3){
+      return "No se encontraron los meses pedidos";
+
+    }else{
+      return meses;
+    }
+}
+mesesDelAño(["Diciembre","Octubre","Enero","Julio","Marzo","Noviembre"]);
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var Sobre100=[];
+  for(var i=0; i<array.length; i++){
+      if(array[i]>100){
+          Sobre100.push(array[i]);
+
+      }
+
+  }
+  return Sobre100;
 }
+mayorACien([0,60,50,120,90,70,200]);
 
 
 function breakStatement(numero) {
@@ -215,7 +245,26 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var nuevoArray=[];
+  var Total=numero;
+  for(var i=0; i<10; i++){
+    Total+=2;
+    if(Total === i){
+      break;
+    }else{
+        nuevoArray.push(Total);
+
+    }
+
+  }
+    if(i<10){
+        return "Se interrumpió la ejecución";
+
+    }else{
+      return nuevoArray;
+    }
 }
+breakStatement(2);
 
 
 function continueStatement(numero) {
@@ -225,7 +274,20 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var nuevoArray=[];
+  var Total=numero;
+  for(var i=0; i<10; i++){
+    if(i===5){
+        continue;
+    }else{
+      Total+=2;
+      nuevoArray.push(Total);
+    }
+
+  }
+  return nuevoArray;
 }
+continueStatement(2);
 
 
 // No modificar nada debajo de esta línea
