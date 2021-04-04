@@ -1,0 +1,9 @@
+
+
+        DEFINICION DE ARRAY
+******************************************************************************************************************
+
+    Si Una Variable Es Una Caja Donde Puedes Almacenar Datos, Entiendase: "String", Numeros, Boleanos.
+    En Ese Sentido Una variable Seria Un Camion Donde Solo Puede Recibir Un Determinado Tamaño De Carga.
+    En Comparacion Los Array "Arreglos" Vendria Siendo Como Un Barco Cargero De Containers. Los Array Manejan Grandes Colecciones 
+    y Colecciones De Datos
